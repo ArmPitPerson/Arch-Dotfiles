@@ -1,1 +1,13 @@
+#define bgColor		#002b36
+#define fgColor		#839496
+#define fgBoldColor	#eee8d5
+#define cursorColor	#93a1a1
 
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #002b36, #002b36, #002b36
+rofi.color-normal: argb:0839496, #839496, argb:0073642, argb:0268bd2, #eee8d5
+rofi.color-active: argb:38839496, #eee8d5, argb:40839496, #839496, #eee8d5
+rofi.color-urgent: #ffffff, #dc322f, #ffffff, #dc322f, #ffffff
