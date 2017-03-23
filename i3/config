@@ -115,5 +115,24 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Lock Screen
+
+
+# COLORS 
+
+set $bgColor #002b36
+set $fgColor #839496
+set $highlightColor #eee8d5
+
+# CLASS				# BORDER		#BG		#TEXT			#INDICATOR		#CHILD
+client.focused			#003b46			$bgColor	$highlightColor		$highlightColor		$fgColor
+client.focused_inactive		$bgColor		$bgColor	$highlightColor		$highlightColor		$fgColor
+client.unfocused		$bgColor		$bgColor	$fgColor		$fgColor		$fgColor
+
+
+# HOTKEYS
+
+#Lock screen
 bindsym $mod+l exec ~/usr/dev/lockScreen.sh
+
+# Sublime with locale
+bindsym $mod+t exec LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-8 subl3
