@@ -11,6 +11,9 @@ font pango:Roboto 9
 # Start Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
+# Start Compton
+exec compton -bCG --config ~/etc/.compton.conf
+
 # Set Wallpaper
 exec feh --bg-fill ~/usr/img/wallpapers/vaporwaveCity.jpg
 
