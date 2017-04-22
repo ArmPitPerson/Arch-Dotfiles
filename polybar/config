@@ -47,8 +47,8 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = i3
-modules-center = 
-modules-right = xbacklight volume xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-center =
+modules-right = xbacklight volume xkeyboard memory cpu wlan eth batteryinternal batteryexternal temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -282,9 +282,36 @@ bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
-[module/battery]
+[module/batteryinternal]
 type = internal/battery
 battery = BAT0
+adapter = AC
+full-at = 98
+
+format-charging = <animation-charging> <label-charging>
+format-charging-underline = #ffb52a
+
+format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-underline = ${self.format-charging-underline}
+
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.foreground-alt}
+format-full-underline = ${self.format-charging-underline}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-foreground = ${colors.foreground-alt}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-framerate = 750
+
+[module/batteryexternal]
+type = internal/battery
+battery = BAT1
 adapter = AC
 full-at = 98
 

@@ -4,8 +4,18 @@
 
 set $mod Mod4
 
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
+set $ws1 1:Terminal
+set $ws2 2:Browser
+set $ws3 3:Code
+set $ws4 4:Code
+set $ws5 5:Build
+set $ws6 6:Test
+set $ws7 7:Etc
+set $ws8 8:Video
+set $ws9 9:Music
+set $ws10 10:Password
+
+# Font for window titles
 font pango:Roboto 9
 
 # Start Polybar
@@ -31,15 +41,6 @@ gaps outer 0
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
-
-# kill focused window
-bindsym $mod+Shift+q kill
-
-# Rofi (application launcher)U
-bindsym $mod+d exec rofi -show drun
 
 # Cursor key window swapping
 bindsym $mod+Left focus left
@@ -73,41 +74,42 @@ bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
-# switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+# WORKSPACES
 
-# move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+# Switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
+# Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
 
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
 
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# AUTO ASSIGNED APPLICATIONS
+
+# Sublime to 3
+# Chrome / FFox to 2
+# KeePass to 10
 
 
 # RESIZE MODE
+
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -122,10 +124,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-
-
-# COLORS 
-
+# COLORS
 set $bgColor #002b36
 set $fgColor #839496
 set $highlightColor #eee8d5
@@ -138,8 +137,26 @@ client.unfocused		$bgColor		$bgColor	$fgColor		$fgColor		$fgColor
 
 # HOTKEYS
 
-#Lock screen
+# Lock screen
 bindsym $mod+l exec ~/usr/dev/lockScreen.sh
 
 # Sublime with locale
 bindsym $mod+t exec LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-8 subl3
+
+# Rofi (application launcher)
+bindsym $mod+d exec rofi -show drun
+
+# Exit i3 and X
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# Reload the configuration file
+bindsym $mod+Shift+c reload
+
+# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# Start a terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
+# Kill focused window
+bindsym $mod+Shift+q kill
