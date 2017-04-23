@@ -1,14 +1,12 @@
 {
+	"always_show_minimap_viewport": true,
 	"bold_folder_labels": true,
+	"caret_extra_bottom": 2,
+	"caret_extra_top": 2,
 	"caret_style": "solid",
-	"wide_caret": true,
 	"color_scheme": "Packages/Materialize/schemes/Material Solarized Dark.tmTheme",
 	"command": "toggle_menu",
-	"keys":
-	[
-		"ctrl+alt+m"
-	],
-	"theme": "Material Solarized Dark.sublime-theme",
+	"drag_text": false,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
@@ -29,21 +27,23 @@
 		"subpixel_antialias",
 		"no_bold"
 	],
-	"font_size": 11,
+	"font_size": 12,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
 	"indent_to_bracket": true,
+	"keys":
+	[
+		"ctrl+alt+m"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"overlay_scroll_bars": "enabled",
 	"show_errors_inline": false,
-	"always_show_minimap_viewport": true,
-    "caret_extra_bottom": 2,
-    "caret_extra_top": 2,
-    "drag_text": false,
-    "line_padding_bottom": 1,
-    "line_padding_top": 1,
-    "overlay_scroll_bars": "enabled",
-    "translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"theme": "Material Solarized Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"wide_caret": true
 }
