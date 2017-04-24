@@ -27,7 +27,7 @@
 		"subpixel_antialias",
 		"no_bold"
 	],
-	"font_size": 12,
+	"font_size": 13,
 	"highlight_line": true,
 	"ignored_packages":
 	[

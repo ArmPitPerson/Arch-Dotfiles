@@ -103,9 +103,10 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 # AUTO ASSIGNED APPLICATIONS
 
-# Sublime to 3
-# Chrome / FFox to 2
-# KeePass to 10
+assign [class="Subl3"] 3
+assign [class="google-chrome"] 2
+assign [class="Firefox"] 2
+assign [class="keepass2"] 10
 
 
 # RESIZE MODE
