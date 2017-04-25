@@ -14,6 +14,10 @@ compinit
 # Set up path
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Set up aliases
+alias c='clear'
+alias dev='cd ~/usr/dev/'
+
 # To hide carl@blacktop
 DEFAULT_USER="carl"
 
