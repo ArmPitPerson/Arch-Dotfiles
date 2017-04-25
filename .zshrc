@@ -17,6 +17,8 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Set up aliases
 alias c='clear'
 alias dev='cd ~/usr/dev/'
+alias tmp='cd ~/usr/tmp/'
+alias img='cd ~/usr/img/'
 
 # To hide carl@blacktop
 DEFAULT_USER="carl"
