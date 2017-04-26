@@ -1,11 +1,7 @@
 # DOTFILES
 This repository contains the dotfiles i use for my current setup of Arch Linux. They will be updated as my current setup is changed, and should always represent the image below:
 
-## LOOK
-!["Current Rice Look"](http://i.imgur.com/80ghH1Z.jpg)
-
-## SCREENFETCH
-!["Screenfetch"](http://i.imgur.com/Rc61yF2.jpg)
+!["Current Rice Look"](http://i.imgur.com/lLO7iZ6.jpg)
 
 ## Environment information
  * i3-gaps
