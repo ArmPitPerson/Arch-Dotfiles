@@ -1,0 +1,14 @@
+[user]
+        name = Carl Findahl
+        email = sportleroro@gmail.com
+[core]
+        editor = vim
+
+[alias]
+        s = status
+      
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
