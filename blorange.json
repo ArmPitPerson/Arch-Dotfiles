@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/carl/usr/img/wallpapers/small-memory-lp.jpg",
+    "colors": {
+        "color0": "#03142c",
+        "color1": "#d09d70",
+        "color2": "#89ac30",
+        "color3": "#236d8d",
+        "color4": "#606f89",
+        "color5": "#267992",
+        "color6": "#5ab18d",
+        "color7": "#a5d1da",
+        "color8": "#739298",
+        "color9": "#ed9d57",
+        "color10": "#dbdd3d",
+        "color11": "#236d8d",
+        "color12": "#606f89",
+        "color13": "#2c94a8",
+        "color14": "#50ccb2",
+        "color15": "#a5d1da"
+    },
+    "special": {
+        "foreground": "#a5d1da",
+        "background": "#03142c",
+        "cursor": "a5d1da"
+    },
+    "alpha": "100"
+}

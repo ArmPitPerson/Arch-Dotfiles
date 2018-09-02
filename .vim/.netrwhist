@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/carl/.config/sxhkd'
+let g:netrw_dirhist_2='/home/carl/.config/bspwm'
+let g:netrw_dirhist_3='/home/carl/.config/termite'
+let g:netrw_dirhist_4='/home/carl/.config/compton'
+let g:netrw_dirhist_5='/home/carl/.config/bspwm'
+let g:netrw_dirhist_6='/home/carl/.config/sxhkd'
+let g:netrw_dirhist_7='/home/carl/usr/dev/RMIT/gfxProg/.git'
+let g:netrw_dirhist_8='/home/carl/.config/sxhkd'
+let g:netrw_dirhist_9='/home/carl/.config/termite'

@@ -1,0 +1,3 @@
+[submodule "nixUtil"]
+	path = nixUtil
+	url = https://github.com/carlfindahl/nixutil.git

@@ -1,4 +1,9 @@
 
+" Plug Plugins
+call plug#begin('~/.vim/plugged')
+Plug 'dylanaraps/wal.vim'
+call plug#end()
+
 " Encoding
 set enc=utf-8
 set fenc=utf-8
@@ -20,9 +25,7 @@ set showmatch
 set number
 
 " Theme
-let g:hybrid_custom_term_colors=1
-set background=dark
-colorscheme hybrid
+colorscheme wal
 
 " Highlighting
 filetype plugin on

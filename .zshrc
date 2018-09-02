@@ -93,6 +93,9 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Load WAL Scheme
+(cat ~/.cache/wal/sequences &)
+
 # Export ENV vars
 export dev=~/usr/dev
 export img=~/usr/img
