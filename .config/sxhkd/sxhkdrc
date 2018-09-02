@@ -6,10 +6,6 @@
 super + e
 	thunar
 
-# US Kb Layout
-#super + space
-#        setxkbmap us
-
 # Lock screen
 super + x
         ~/usr/dev/lockScript.sh
@@ -47,7 +43,7 @@ super + Return
 
 # DMenu Launcher
 super + d
-	dmenu_run -fn 'Roboto-9' -nb '#1d1f21' -nf '#c5c8c6' -sb '#538d87' -sf '#c5c8c6' -p '>' -b
+	dmenu_run -fn 'Hack-9' -nb '#1d1f21' -nf '#c5c8c6' -sb '#538d87' -sf '#c5c8c6' -p '>' -b
 
 # Git DMenu Launcher
 super + g
