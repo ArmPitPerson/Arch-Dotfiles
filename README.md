@@ -1,19 +1,15 @@
 # DOTFILES
 This repository contains the dotfiles i use for my current setup of Arch Linux. They will be updated as my current setup is changed, and should always represent the image below:
 
-!["Current Rice Look"](http://i.imgur.com/lLO7iZ6.jpg)
+!["Current Rice Look"](https://i.imgur.com/5Bn7hw0.jpg)
 
 ## Environment information
- * i3-gaps
- * Polybar
- * ZSH
- * Compton
- * i3lock
+ * bspwm
+ * lemonbar
+ * zsh
+ * compton
 
 ## Info
-All of these configuration files are located in ~/etc and are symlinked in their respective directories. AKA .zshenv would be symlinked like so:
-`ln -s ~/etc/.zshenv ~/`
+Run the install script while cd-ed into the root folder of this repo. It should symlink everything to sensible locations
+(~/ and ~/.config/) for your convenience. Other than that, wal must be set up using blorange theme and the wallpaper.
 
-The folders live in `~/.config` generally, except from the startup folder which could just stay in '~/etc'. It is used for storing scripts to run on system boot.
-
-Most of the folders would be symlinked to `~/.config`, and so on. I will consider making a script to do the symlinking automatically, but for now it's a manual duty.
